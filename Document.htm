@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="Document_files/style.css"></head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__nav">
+        <div class="navbar__nav--logo">
+            <img src="Document_files/logo.png" alt="logo">
+        </div>
+        <ul class="navbar__nav--links">
+                <li> <a href="">Кроссовки</a></li>
+                <li> <a href="">Кеды</a></li>
+                <li> <a href="">Футболки</a></li>
+                <li> <a href="">Шорты</a></li>
+                <li> <a href="">Майки</a></li>
+                <li> <a href="">Олимпийки</a></li>
+                <li> <a href="">Толстовки</a></li>
+        </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+  <!-- header -->
+  <header class="header">
+    <div class="header-text">
+        <h1>Nike</h1>
+        <p>  </p><p>Крутые кроссовки от <span class="p-word">NIKE</span> для вас</p><p></p>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- product start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <img src="Document_files/main-pic.jpg" alt="">
+        <h3>Shoe Review: Nike React Infinity Run</h3>
+        <p>        Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+ urna, porttitor rhoncus dolor purus non enim praesent elementum 
+facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam 
+dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in 
+ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit 
+amet massa
+        </p>
+      </div>
+      <div class="footer__second">
+        <div class="footer__card">
+          <img src="Document_files/pic-1.png" alt="pic-1">
+          <h3>
+            Nike Air Max 270
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+
+        <div class="footer__card">
+          <img src="Document_files/pic-2.png" alt="pic-1">
+          <h3>
+            Nike Air Max 270
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+
+        <div class="footer__card">
+          <img src="Document_files/pic-3.png" alt="pic-1">
+          <h3>
+            Nike Air Max 270
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+
+        <div class="footer__card">
+          <img src="Document_files/pic-4.png" alt="pic-1">
+          <h3>
+            Nike Air Max 270
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- product finish -->
+  <footer class="product">
+    <div class="container">
+      <div class="product__search">
+
+      </div>
+      <ul class="product__links">
+        <li><a href="">Кроссовки</a></li>
+        <li><a href="">Майки</a></li>
+        <li><a href="">Кеды</a></li>
+        <li><a href="">Олимпийки</a></li>
+        <li><a href="">Футболки</a></li>
+        <li><a href="">Толстовки</a></li>
+        <li><a href="">Шорты</a></li>
+      </ul>
+    </div>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
